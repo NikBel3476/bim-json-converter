@@ -1,7 +1,7 @@
 {
   "name": "bim-json-converter",
   "version": "0.1.0",
-  "description": "",
+  "description": "Converter to different version of bim json",
   "main": "index.ts",
   "scripts": {
     "start": "ts-node index.ts",
@@ -9,7 +9,6 @@
   },
   "author": "",
   "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "@types/node": "^20.3.1",
     "prettier": "^2.8.8",
