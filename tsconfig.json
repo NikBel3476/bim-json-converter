@@ -2,21 +2,26 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": [
-      "ESNext"
-    ],
-    "allowJs": false,
+    "module": "ESNext",
+    "lib": ["ESNExt", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-    "composite": true,
-    "esModuleInterop": false,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowJs": false,
+    "composite": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src"]
 }
