@@ -80,7 +80,7 @@ async function convertBimJson() {
 				const json = JSON.parse(await file.text());
 				const convertedBim = convertingFunction(json);
 				convertedFiles.push(
-					new File([JSON.stringify(convertedBim)], file.name, {
+					new File([JSON.stringify(convertedBim, undefined, 2)], file.name, {
 						type: 'application/json'
 					})
 				);
