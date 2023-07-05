@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	margin: 0;
+	padding: 5px;
+}
+
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
@@ -23,17 +28,37 @@
 	flex-flow: column wrap;
 }
 
+#main_title {
+	margin: 0;
+}
+
 #choose_file_section {
 	max-width: 300px;
 	display: flex;
 	flex-flow: column wrap;
 }
 
-#choose_file_section * {
+#choose_file_section > * {
 	margin-top: 20px;
+}
+
+#file_input_wrapper {
+	font-size: 1.25rem;
+}
+
+#file_input {
+	font-size: 1rem;
 }
 
 #download_section {
 	display: flex;
 	flex-flow: column wrap;
+}
+
+#version_select, #convert_button {
+	height: 30px;
+	border: 1px solid #5a5a5a;
+	border-radius: 20px;
+	font-size: 1rem;
+	padding: 0 10px;
 }
