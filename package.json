@@ -3,13 +3,22 @@
   "private": true,
   "version": "0.2.0",
   "description": "Converter to different version of bim json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikBel3476/bim-json-converter.git"
+  },
+  "keywords": [],
+  "author": "NikBel3476",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NikBel3476/bim-json-converter.git/issues"
+  },
+  "homepage": "https://github.com/NikBel3476/bim-json-converter.git#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
-  "author": "NikBel3476",
-  "license": "MIT",
   "devDependencies": {
     "prettier": "^2.8.8",
     "typescript": "^5.1.3",
