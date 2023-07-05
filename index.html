@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bim json converter</title>
+</head>
+<body>
+  <header>
+    <h1 id="main_title">BuildingJSON converter</h1>
+  </header>
+  <main id="app">
+    <section id="choose_file_section">
+      <select id="version_select"></select>
+      <div id="file_input_wrapper">
+        <label for="file_input">Выбрать файлы</label>
+        <input type="file" id="file_input" accept="application/json" multiple>
+      </div>
+      <button type="button" id="convert_button">Преобразовать</button>
+    </section>
+    <section id="download_section"></section>
+    <section id="errors_section"></section>
+  </main>
+  <script type="module" src="src/main.ts"></script>
+</body>
+</html>
